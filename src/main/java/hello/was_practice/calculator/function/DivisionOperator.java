@@ -1,4 +1,4 @@
-package hello.was_practice.calculator;
+package hello.was_practice.calculator.function;
 
 public class DivisionOperator implements NewArithmeticOperator {
     @Override

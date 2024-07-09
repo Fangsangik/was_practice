@@ -1,4 +1,4 @@
-package hello.was_practice.query;
+package hello.was_practice.calculator.query;
 
 import java.util.ArrayList;
 import java.util.Arrays;

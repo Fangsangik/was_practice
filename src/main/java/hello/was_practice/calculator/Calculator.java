@@ -1,5 +1,7 @@
 package hello.was_practice.calculator;
 
+import hello.was_practice.calculator.function.*;
+
 import java.util.List;
 
 public class Calculator {

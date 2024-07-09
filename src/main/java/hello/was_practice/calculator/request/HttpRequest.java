@@ -1,6 +1,6 @@
-package hello.was_practice.request;
+package hello.was_practice.calculator.request;
 
-import hello.was_practice.query.QueryStrings;
+import hello.was_practice.calculator.query.QueryStrings;
 import hello.was_practice.RequestLine;
 
 import java.io.BufferedReader;

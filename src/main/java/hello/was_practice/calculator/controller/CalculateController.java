@@ -1,7 +1,7 @@
-package hello.was_practice.controller;
+package hello.was_practice.calculator.controller;
 
 import hello.was_practice.calculator.Calculator;
-import hello.was_practice.calculator.PositiveNumber;
+import hello.was_practice.calculator.function.PositiveNumber;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

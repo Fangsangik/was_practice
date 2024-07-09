@@ -1,4 +1,4 @@
-package hello.was_practice.response;
+package hello.was_practice.calculator.response;
 
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;

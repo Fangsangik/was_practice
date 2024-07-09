@@ -1,6 +1,6 @@
 package hello.was_practice;
 
-import hello.was_practice.query.QueryStrings;
+import hello.was_practice.calculator.query.QueryStrings;
 import lombok.Getter;
 
 import java.util.Objects;

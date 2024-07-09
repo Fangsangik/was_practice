@@ -1,6 +1,6 @@
-package hello.was_practice.query;
+package hello.was_practice.caculator.query;
 
-import hello.was_practice.query.QueryString;
+import hello.was_practice.calculator.query.QueryString;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
