@@ -1,6 +1,5 @@
 package hello.was_practice.query;
 
-import hello.was_practice.query.QueryStrings;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
