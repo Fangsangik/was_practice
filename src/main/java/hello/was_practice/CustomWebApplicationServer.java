@@ -13,9 +13,15 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class CustomWebApplicationServer {
 
+    //ThreadPool 적용하기
+    //newFixedThreadPool -> 해당 부분을 ThreadPool을 이용해서 안정적으로 사용
+    private final ExecutorService executorService = Executors.newFixedThreadPool(10);
     private final int port;
 
     private static final Logger log = LoggerFactory.getLogger(CustomWebApplicationServer.class);
@@ -38,8 +44,10 @@ public class CustomWebApplicationServer {
             while ((clientSocket = serverSocket.accept()) != null) {
                 log.info("CustomWebApplication client connected");
 
+                //개당 Thread 마다 excute를 타고
+                executorService.execute(new ClientRequestHandler(clientSocket));
                 //client 마다 별도 스레드 수행
-                new Thread(new ClientRequestHandler(clientSocket)).start();
+                //new Thread(new ClientRequestHandler(clientSocket)).start();
 
                 /**
                  * step1 - 사용자 요청을 메인 Thread가 처리하도록 한다.
